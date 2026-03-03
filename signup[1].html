@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started | Gushwork</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="index.html" class="logo">GUSH<span>WORK</span></a>
+                </div>
+                <div class="header__actions" style="display: flex; gap: 20px; align-items: center;">
+                    <a href="index.html" class="btn btn--text btn--small">&larr; Back to Home</a>
+                    <a href="signin.html" class="btn btn--text btn--small">Already have an account? Sign In</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <h1 class="auth-title">Create Account</h1>
+            <p class="auth-subtitle">Join Gushwork and start your journey today</p>
+            
+            <form class="auth-form" id="signup-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="name@company.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                    <p class="form-hint">Must be at least 8 characters</p>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">Get Started</button>
+                <a href="index.html" class="btn btn--text btn--full" style="margin-top: 10px; text-align: center; font-size: 0.875rem;">&larr; Back to Home</a>
+            </form>
+
+            <p class="auth-terms">
+                By clicking "Get Started", you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+            </p>
+
+            <div class="auth-divider">
+                <span>or join with</span>
+            </div>
+
+            <div class="social-auth">
+                <button class="btn btn--outline btn--full social-btn">
+                    <img src="https://www.google.com/favicon.ico" alt="Google" width="16" height="16">
+                    Google
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom">
+                <p>&copy; 2024 Gushwork. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
