@@ -2,216 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Gushwork | Premium Headphones</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gushwork Assignment | Premium Product Landing</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Sticky Header (Hidden by default) -->
-    <header class="header header--sticky" id="sticky-header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__logo">
-                    <a href="#" class="logo">GUSH<span>WORK</span></a>
-                </div>
-                <nav class="header__nav">
-                    <ul class="nav-list">
-                        <li><a href="#hero" class="nav-link">Home</a></li>
-                        <li><a href="#carousel" class="nav-link">Products</a></li>
-                        <li><a href="#features" class="nav-link">Features</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header__actions">
-                    <a href="#" class="btn btn--primary btn--small">Buy Now</a>
-                </div>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="container header-container">
+        <div class="logo">
+            GUSH<span>WORK</span>
+        </div>
+
+        <nav class="nav" id="nav-menu">
+            <a href="#hero">Home</a>
+            <a href="#products">Products</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="#" class="btn btn-outline">Sign In</a>
+            <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+    <div class="container hero-container">
+        <div class="hero-text">
+            <h1>Experience the Future of <span>Sound</span></h1>
+            <p>
+                The Gush Pro Headphones deliver unparalleled audio quality
+                with active noise cancellation and 40-hour battery life.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Shop Now</a>
+                <a href="#features" class="btn btn-text">Learn More →</a>
             </div>
         </div>
-    </header>
 
-    <!-- Main Header -->
-    <header class="header" id="main-header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__logo">
-                    <a href="#" class="logo">GUSH<span>WORK</span></a>
-                </div>
-                <nav class="header__nav">
-                    <ul class="nav-list">
-                        <li><a href="#hero" class="nav-link">Home</a></li>
-                        <li><a href="#carousel" class="nav-link">Products</a></li>
-                        <li><a href="#features" class="nav-link">Features</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header__actions">
-                    <a href="signin.html" class="btn btn--outline btn--small">Sign In</a>
-                    <a href="signup.html" class="btn btn--primary btn--small">Get Started</a>
-                </div>
-                <button class="header__mobile-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+        <div class="hero-image">
+            <img src="https://picsum.photos/seed/headphone/700/500" alt="Headphones">
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+<section class="products" id="products">
+    <div class="container">
+        <h2 class="section-title">Product Showcase</h2>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://picsum.photos/seed/1/400/400" alt="">
+                <h3>Midnight Black</h3>
+                <p>$299</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/seed/2/400/400" alt="">
+                <h3>Arctic Silver</h3>
+                <p>$299</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/seed/3/400/400" alt="">
+                <h3>Rose Gold</h3>
+                <p>$329</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/seed/4/400/400" alt="">
+                <h3>Deep Navy</h3>
+                <p>$299</p>
             </div>
         </div>
-    </header>
+    </div>
+</section>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-            <div class="container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Experience the Future of <span>Sound</span>.</h1>
-                    <p class="hero__subtitle">The Gush Pro Headphones deliver unparalleled audio quality with active noise cancellation and 40-hour battery life.</p>
-                    <div class="hero__btns">
-                        <a href="#carousel" class="btn btn--primary">Shop Now</a>
-                        <a href="#features" class="btn btn--text">Learn More &rarr;</a>
-                    </div>
-                </div>
-                <div class="hero__image">
-                    <img src="https://picsum.photos/seed/gush-hero/1200/800" alt="Gush Pro Headphones" referrerPolicy="no-referrer">
-                </div>
-            </div>
-        </section>
 
-        <!-- Carousel Section -->
-        <section class="carousel-section" id="carousel">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Product Showcase</h2>
-                    <p class="section-subtitle">Hover over images to see the intricate details of our craftsmanship.</p>
-                </div>
-
-                <div class="carousel" id="product-carousel">
-                    <div class="carousel__viewport">
-                        <div class="carousel__track">
-                            <!-- Slide 1 -->
-                            <div class="carousel__slide">
-                                <div class="zoom-container">
-                                    <img src="https://picsum.photos/seed/gush1/800/800" alt="Gush Pro Black" class="zoom-image" referrerPolicy="no-referrer">
-                                    <div class="zoom-lens"></div>
-                                    <div class="zoom-result"></div>
-                                </div>
-                                <div class="carousel__slide-info">
-                                    <h3>Gush Pro - Midnight Black</h3>
-                                    <p>$299.00</p>
-                                </div>
-                            </div>
-                            <!-- Slide 2 -->
-                            <div class="carousel__slide">
-                                <div class="zoom-container">
-                                    <img src="https://picsum.photos/seed/gush2/800/800" alt="Gush Pro Silver" class="zoom-image" referrerPolicy="no-referrer">
-                                    <div class="zoom-lens"></div>
-                                    <div class="zoom-result"></div>
-                                </div>
-                                <div class="carousel__slide-info">
-                                    <h3>Gush Pro - Arctic Silver</h3>
-                                    <p>$299.00</p>
-                                </div>
-                            </div>
-                            <!-- Slide 3 -->
-                            <div class="carousel__slide">
-                                <div class="zoom-container">
-                                    <img src="https://picsum.photos/seed/gush3/800/800" alt="Gush Pro Gold" class="zoom-image" referrerPolicy="no-referrer">
-                                    <div class="zoom-lens"></div>
-                                    <div class="zoom-result"></div>
-                                </div>
-                                <div class="carousel__slide-info">
-                                    <h3>Gush Pro - Rose Gold</h3>
-                                    <p>$329.00</p>
-                                </div>
-                            </div>
-                            <!-- Slide 4 -->
-                            <div class="carousel__slide">
-                                <div class="zoom-container">
-                                    <img src="https://picsum.photos/seed/gush4/800/800" alt="Gush Pro Navy" class="zoom-image" referrerPolicy="no-referrer">
-                                    <div class="zoom-lens"></div>
-                                    <div class="zoom-result"></div>
-                                </div>
-                                <div class="carousel__slide-info">
-                                    <h3>Gush Pro - Deep Navy</h3>
-                                    <p>$299.00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Carousel Controls -->
-                    <button class="carousel__btn carousel__btn--prev" aria-label="Previous slide">&lsaquo;</button>
-                    <button class="carousel__btn carousel__btn--next" aria-label="Next slide">&rsaquo;</button>
-                    
-                    <!-- Carousel Indicators -->
-                    <div class="carousel__indicators">
-                        <button class="carousel__dot active" data-slide="0" aria-label="Slide 1"></button>
-                        <button class="carousel__dot" data-slide="1" aria-label="Slide 2"></button>
-                        <button class="carousel__dot" data-slide="2" aria-label="Slide 3"></button>
-                        <button class="carousel__dot" data-slide="3" aria-label="Slide 4"></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section class="features" id="features">
-            <div class="container">
-                <div class="features__grid">
-                    <div class="feature-card">
-                        <div class="feature-card__icon">🎧</div>
-                        <h3 class="feature-card__title">Spatial Audio</h3>
-                        <p class="feature-card__text">Immerse yourself in theater-like sound that surrounds you from every direction.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card__icon">🔋</div>
-                        <h3 class="feature-card__title">40h Battery</h3>
-                        <p class="feature-card__text">Listen all week on a single charge. Fast charging gives 3 hours in 10 minutes.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card__icon">🔇</div>
-                        <h3 class="feature-card__title">Active Noise Cancellation</h3>
-                        <p class="feature-card__text">Block out the world and focus on what matters with industry-leading ANC.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__brand">
-                    <a href="#" class="logo">GUSH<span>WORK</span></a>
-                    <p>Redefining audio excellence since 2024.</p>
-                </div>
-                <div class="footer__links">
-                    <div class="footer__col">
-                        <h4>Product</h4>
-                        <ul>
-                            <li><a href="#">Overview</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Solutions</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__col">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p>&copy; 2024 Gushwork. All rights reserved.</p>
-            </div>
+<!-- ================= FEATURES ================= -->
+<section class="features" id="features">
+    <div class="container feature-container">
+        <div class="feature-card">
+            <h3>🎧 Spatial Audio</h3>
+            <p>Immersive surround sound experience.</p>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="feature-card">
+            <h3>🔋 40h Battery</h3>
+            <p>Listen all week on a single charge.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🔇 Noise Cancellation</h3>
+            <p>Block the world and focus on music.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="contact">
+    <div class="container footer-container">
+        <div>
+            <h3>GUSHWORK</h3>
+            <p>Redefining audio excellence since 2024.</p>
+        </div>
+
+        <div>
+            <h4>Company</h4>
+            <p>About</p>
+            <p>Careers</p>
+            <p>Contact</p>
+        </div>
+
+        <div>
+            <h4>Product</h4>
+            <p>Overview</p>
+            <p>Features</p>
+            <p>Solutions</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Gushwork. All rights reserved.
+    </div>
+</footer>
+
+
+<!-- ================= JS ================= -->
+<script src="script.js"></script>
+
 </body>
 </html>
